@@ -14,7 +14,7 @@ cd(uigetdir(pwd, 'Navigate to folder for video output'));
 %%
 trialLength = 0.5; %Trial length, in minutes
 
-trialInterval = 2; %Time between trials in minutes
+trialInterval = 30; %Time between trials in minutes
 
 tic; %Start matlab timer
 
@@ -23,6 +23,7 @@ while 1 %infinite loop
     if mod(toc,trialInterval*60) < 2 %Are
         times = collectVideoTrial(vid, trialLength);
         plot(times);
+        drawnow;
     end
     
 end
