@@ -12,9 +12,9 @@ cd(uigetdir(pwd, 'Navigate to folder for video output'));
 %times = collectVideoTrial(vid, 0.5); %
 
 %%
-trialLength = 0.5; %Trial length, in minutes
+trialLength = 1; %Trial length, in minutes
 
-trialInterval = 30; %Time between trials in minutes
+trialInterval = 5; %Time between trials in minutes
 
 tic; %Start matlab timer
 
